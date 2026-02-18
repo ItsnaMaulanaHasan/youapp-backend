@@ -44,7 +44,7 @@ export class Profile {
 
 export const ProfileSchema = SchemaFactory.createForClass(Profile);
 
-ProfileSchema.index({ userId: 1 }, { unique: true });
+// ProfileSchema.index({ userId: 1 }, { unique: true });
 
 ProfileSchema.set('toJSON', {
   transform: (_, ret: any) => {
